@@ -17,14 +17,15 @@ export class MyApp {
 
   // make HelloIonicPage the root (or first) page
   rootPage = HelloIonicPage;
-  pages: Array<{title: string, component: any}>;
-
+  pages: Array<{ title: string, component: any }>;
+  isVisible: boolean;
   constructor(
     public platform: Platform,
     public menu: MenuController,
     public statusBar: StatusBar,
     public splashScreen: SplashScreen
   ) {
+    this.isVisible = true;
     this.initializeApp();
 
     // set our app's pages
@@ -48,5 +49,8 @@ export class MyApp {
     this.menu.close();
     // navigate to the new page if it is not the current page
     this.nav.setRoot(page.component);
+  }
+  splitPaneChange(e) {
+    console.log("Split Pane Visible:", e._visible);
   }
 }

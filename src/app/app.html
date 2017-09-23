@@ -1,4 +1,5 @@
-<ion-menu [content]="content">
+<ion-split-pane (ionChange)="splitPaneChange($event)" [when]="isVisible">
+  <ion-menu [content]="content">
 
   <ion-header>
     <ion-toolbar>
@@ -16,4 +17,5 @@
 
 </ion-menu>
 
-<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false" main></ion-nav>
+</ion-split-pane>
