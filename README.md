@@ -110,4 +110,5 @@ export class MyClass{
 
 }
 ```
-Hope that helps
+Hope that helps :)
+You can find other articles [here](http://jslovely.blogspot.com).
