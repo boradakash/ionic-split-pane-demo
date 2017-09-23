@@ -15,7 +15,7 @@ Now let's create a simple application for splitpane component in ionic
 
 > Note: Ionic version (>2.2.0)
 
-> If you don't have basic setup for ionic app, then take a look at this [article](jslovely.blogspot.com).
+> If you don't have basic setup for ionic app, then take a look at this [article](http://jslovely.blogspot.com).
 
 Then go to the root component file which is app.component.ts
 
